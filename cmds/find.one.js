@@ -33,7 +33,8 @@ function func_get_price(gpdmList, position, fund){
 				}
 				all_total += position[i].percent;
 			}
-			console.log(process.argv[2], fund, total, all_total, 100*total/(all_total+1));
+//			console.log(process.argv[2], fund, total, all_total, 100*total/(all_total+1));
+			console.log("%d,%s,%d,%d,%d", process.argv[2], fund, total, all_total, 100*total/(all_total+1));
 		});
 	});
 	req.on('error', function(err){
